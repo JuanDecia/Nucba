@@ -14,15 +14,14 @@ body {
 }
 
 main {
-    max-width: 90%;
-    width: 90%;
+    max-width: 85%;
+    width: 85%;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
 
-
 h1 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -61,6 +60,7 @@ li {
 
 li > a {
     text-decoration: none;
+    font-size: large;
     color: #fff
 }
 
@@ -79,6 +79,7 @@ li > a:hover {
 
 .cont-presentacion {
     width: 50%;
+    margin-right: 50px;
 }
 
 .cont-titulo {
@@ -94,8 +95,11 @@ li > a:hover {
 
 .descripcion {
     text-align: justify;
+    font-size: large;
     color: #dfdada;
 }
+
+        /* BOTONES */
 
 .cont-botones {
     display: flex;
@@ -119,8 +123,8 @@ li > a:hover {
     text-decoration: none;
 }
 
-.proyectos {
-    background: #fff;  /* fallback for old browsers */
+/* .proyectos {
+    background: #fff;
     width: 30%;
     height: 40px;
     border-radius: 20px;
@@ -131,8 +135,60 @@ li > a:hover {
 .proyectos > a {
     color:#6C5B7B;
     text-decoration: none;
+} */
+
+.btn {
+    display: flex;
+    background-color: #fff;
+    width: 145px;
+    text-align: center;
+    height: 40px;
+    border: #6C5B7B;
+    font-weight: 600;
+    font-size: medium;
 }
 
+.btn:link,
+.btn:visited {
+ text-decoration: none;
+ color: #6C5B7B;
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.btn:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn:active {
+ transform: translateY(-3px);
+}
+
+.btn::after {
+ content: "";
+ display: inline-block;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ position: absolute;
+ z-index: -1;
+ transition: all .3s;
+}
+
+.btn:hover::after {
+ background-color: #fff;
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
+
+/* Imagen */
 
 .cont-foto-perfil {
     display: flex;
