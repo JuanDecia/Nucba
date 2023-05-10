@@ -22,7 +22,6 @@ main {
 
 h1 {
     font-size: 3em;
-    text-align: center;
 }
 
 /* ######################################### */
@@ -71,10 +70,10 @@ li > a:hover {
 
 /* ######################################### */
 
-/* PRESENTACIÓN */
+/* PORTADA */
 .cont-portada{
     display: flex;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .cont-presentacion {
@@ -85,12 +84,14 @@ li > a:hover {
 .cont-titulo {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+    margin-left: 40px;
 }
 
 .cont-descripcion {
     margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .descripcion {
@@ -99,12 +100,15 @@ li > a:hover {
     color: #dfdada;
 }
 
+.negrita {
+    font-weight: 600;
+}
+
         /* BOTONES */
 
 .cont-botones {
     display: flex;
     justify-content: space-around;
-    margin-left: 40px;
 }
 
 .contacto {
@@ -182,7 +186,7 @@ li > a:hover {
  opacity: 0;
 }
 
-/* Imagen */
+    /* IMAGEN */
 
 .cont-foto-perfil {
     display: flex;
@@ -203,10 +207,15 @@ li > a:hover {
 
 /* TEXTO PRESENTACIÓN */
 
+.cont-texto-presentacion {
+    margin-bottom: 70px;
+}
+
 .texto-presentacion {
     color: #fff;
     margin: auto;
     width: 50%;
+    font-size: 1.2em;
 }
 
 .texto-presentacion > p {
@@ -231,4 +240,130 @@ li > a:hover {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+}
+
+/* ######################################### */
+
+/* SECCIÓN BENEFICIOS */
+
+    /* TITULO */
+.cont-beneficio-titulo {
+    text-align: center;
+    color: #F25461;
+    margin-bottom: 30px;
+}
+
+.cont-beneficio-titulo > h2 {
+    font-size: 2em;
+}
+
+    /* PARRAFO */
+
+.cont-beneficio-descripcion {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+    /* CARTAS */
+
+/* Contenedor cartas general */
+
+.cont-cards {
+    display: flex;
+    gap: 15px;
+}
+
+/* Card 1 */
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.card-logo {
+    color: #8d99ae;
+    font-size: 4em;
+    text-align: center;
+}
+
+.card-titulo {
+    color: #F25461;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.card-descripcion {
+    color: #fff;
+    text-align: center;
+}
+
+.folly {
+    color: #F25461;
+}
+
+/* Card 2 */
+
+/* Card 1 */
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.card-logo {
+    color: #8d99ae;
+    font-size: 4em;
+    text-align: center;
+}
+
+.card-titulo {
+    color: #F25461;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.card-descripcion {
+    color: #fff;
+    text-align: center;
+}
+
+.folly {
+    color: #F25461;
+}
+
+/* Card 3 */
+
+/* Card 1 */
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.card-logo {
+    color: #8d99ae;
+    font-size: 4em;
+    text-align: center;
+}
+
+.card-titulo {
+    color: #F25461;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.card-descripcion {
+    color: #fff;
+    text-align: center;
+}
+
+.folly {
+    color: #F25461;
 }
