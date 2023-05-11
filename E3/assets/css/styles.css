@@ -274,25 +274,20 @@ li > a:hover {
     gap: 15px;
 }
 
-/* Card 1 */
-
-.card-1 {
-    display: flex;
-    flex-direction: column;
-    width: 33.33%;
+.card-titulo {
+    background: linear-gradient(to right, #90a3f5, #eb2636);
+    color: transparent;
+    background-clip: text; /* Corta el background para visualizar solo texto */
+    -webkit-background-clip: text; /* Toma el texto para aplicar el color del fondo */
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
 }
 
 .card-logo {
     color: #8d99ae;
     font-size: 4em;
     text-align: center;
-}
-
-.card-titulo {
-    color: #F25461;
-    text-align: center;
-    font-size: 1.3em;
-    margin-bottom: 15px;
 }
 
 .card-descripcion {
@@ -304,66 +299,45 @@ li > a:hover {
     color: #F25461;
 }
 
-/* Card 2 */
+/* Card */
 
-/* Card 1 */
-
-.card-2 {
+.card {
     display: flex;
     flex-direction: column;
     width: 33.33%;
 }
 
-.card-logo {
-    color: #8d99ae;
-    font-size: 4em;
-    text-align: center;
-}
+/* ######################################### */
 
-.card-titulo {
-    color: #F25461;
-    text-align: center;
-    font-size: 1.3em;
-    margin-bottom: 15px;
-}
+    /* FOOTER */
 
-.card-descripcion {
-    color: #fff;
-    text-align: center;
-}
-
-.folly {
-    color: #F25461;
-}
-
-/* Card 3 */
-
-/* Card 1 */
-
-.card-3 {
+footer {
+    margin: 70px auto;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 85%;
     display: flex;
-    flex-direction: column;
-    width: 33.33%;
 }
 
-.card-logo {
-    color: #8d99ae;
-    font-size: 4em;
-    text-align: center;
+    /* CONTACT US */
+
+/* Sección General Contact Us */
+
+.cont-contactUs {
+    border: 2px solid green;
+    width: 64%;
 }
 
-.card-titulo {
-    color: #F25461;
-    text-align: center;
-    font-size: 1.3em;
-    margin-bottom: 15px;
+/* Título Contact Us */
+
+.footer-titulo {
+    margin-left: 25%;
+    font-size: 1.9em;
 }
 
-.card-descripcion {
-    color: #fff;
-    text-align: center;
+/* Sección Logo */
+
+.cont-logo-footer {
+    border: 1px solid #fff;
+    width: 36%;
 }
 
-.folly {
-    color: #F25461;
-}
