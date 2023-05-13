@@ -288,6 +288,15 @@ li > a:hover {
     color: #8d99ae;
     font-size: 4em;
     text-align: center;
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -ms-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+
+.card:hover .card-logo {
+    transform: rotate(6deg) scale(1.1);
 }
 
 .card-descripcion {
@@ -323,21 +332,93 @@ footer {
 /* Sección General Contact Us */
 
 .cont-contactUs {
-    border: 2px solid green;
     width: 64%;
 }
 
-/* Título Contact Us */
+/* Sección Título */
 
 .footer-titulo {
-    margin-left: 25%;
+    margin-left: 7%;
     font-size: 1.9em;
+    margin-bottom: 50px;
 }
 
-/* Sección Logo */
+/* Sección Info */
 
-.cont-logo-footer {
-    border: 1px solid #fff;
-    width: 36%;
+.info-footer {
+    display: flex;
 }
 
+.footer-contacto {
+    width: 50%;
+}
+
+.titulo-contacto {
+    text-align: center;
+    color: #b6b6b6;;
+}
+
+/* Info Mail */
+
+.cont-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cont-info-logo {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    margin: auto;
+}
+
+.cont-info-logo i {
+    font-size: 1.5em;
+    color: #b6b6b6;
+}
+
+.cont-footer-nombreMail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b6b6b6;
+}
+
+.cont-footer-nombreMail span {
+    font-weight: 600;
+}
+
+/* Info Telefono */
+
+.cont-footer-numeroContacto {
+    width: 50%;
+    color: #b6b6b6;
+}
+
+.cont-footer-numeroContacto span {
+    font-weight: 600;
+}
+
+/* Redes */
+
+.cont-link-redes {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.link-redes {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+.link-redes:visited {
+    color: #b6b6b6;
+}
+
+.link-redes i {
+    font-size: 2em;
+    color: #b6b6b6;
+}
