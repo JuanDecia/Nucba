@@ -127,20 +127,6 @@ li > a:hover {
     text-decoration: none;
 }
 
-/* .proyectos {
-    background: #fff;
-    width: 30%;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid #6C5B7B;
-    font-size: medium;
-}
-
-.proyectos > a {
-    color:#6C5B7B;
-    text-decoration: none;
-} */
-
 .btn:link,
 .btn:visited {
  text-decoration: none;
@@ -316,12 +302,32 @@ li > a:hover {
     width: 33.33%;
 }
 
+/* Contenedor Tecnologías */
+
+.cont-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.cont-tecnologias i {
+    color: #fff;
+    transition: color 0.5s ease-in-out ;
+    
+}
+
+.cont-tecnologias i:hover {
+    color: #8d99ae
+}
+
+
+
 /* ######################################### */
 
     /* FOOTER */
 
 footer {
-    margin: 70px auto;
+    margin: 100px auto;
     font-family: 'Open Sans', sans-serif;
     max-width: 85%;
     display: flex;
@@ -338,9 +344,10 @@ footer {
 /* Sección Título */
 
 .footer-titulo {
-    margin-left: 7%;
+    margin-left: 17%;
     font-size: 1.9em;
     margin-bottom: 50px;
+    color: #fff;
 }
 
 /* Sección Info */
@@ -421,4 +428,14 @@ footer {
 .link-redes i {
     font-size: 2em;
     color: #b6b6b6;
+}
+
+/* SECCION FOTO */
+
+.footer-img img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 14px 10px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 2px 5px 14px 10px rgba(0,0,0,0.53);
+    -moz-box-shadow: 2px 5px 14px 10px rgba(0,0,0,0.53);
 }

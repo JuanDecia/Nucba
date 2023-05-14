@@ -1,0 +1,48 @@
+/* Tablet */
+@media (max-width: 992px) {
+    .cont-portada {
+        display: inline;
+    }
+
+    .cont-presentacion {
+        width: 100%;
+    }
+
+    .cont-botones {
+        margin-bottom: 50px;
+    }
+
+    .contacto {
+        width: 20%;
+    }
+
+    .btn {
+        width: 20%;
+    }
+
+    .cont-foto-perfil {
+        width: 100%;
+    }
+
+    .cont-texto-presentacion {
+        margin-top: 50px;
+    }
+
+    .footer-titulo {
+        display: none;
+    }
+
+    .cont-info {
+        display: block;
+    }
+
+    .cont-info-logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .cont-footer-numeroContacto {
+        text-align: center;
+        width: 100%;
+    }
+}
