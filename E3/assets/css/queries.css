@@ -1,3 +1,10 @@
+/* Desktop */
+@media (max-width: 1305px) {
+    .menu-label {
+        display:none;
+    }
+}
+
 /* Tablet */
 @media (max-width: 992px) {
     .cont-portada {
@@ -45,4 +52,48 @@
         text-align: center;
         width: 100%;
     }
+}
+
+/* Medium */
+@media (max-width: 768px) {
+
+    .cont-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .contacto {
+        width: 30%;
+    }
+
+    .foto-perfil {
+        width: 300px;
+    }
+
+    .cont-cards {
+        display: block;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .cont-contactUs {
+        width: 100%;
+    }
+    
+    .info-footer {
+        width: 100%;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
 }
