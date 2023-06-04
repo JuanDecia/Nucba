@@ -1,0 +1,265 @@
+/* ############ ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ############ HEADER */
+
+header {
+    display: flex;
+    height: 20vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(24, 201, 245);
+}
+
+.cont-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+  
+  .cont-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+img[src$='envios.png'] {
+    height: 200px;
+}
+
+    /* Nav */
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+    /* Título */
+
+.link-titulo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+
+.link:visited {
+    color: #fff;
+}
+
+    /* Inicio de Sesión y Registro */
+
+.links-header {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin-left: 15%;
+}
+
+.link-inicioSesion, .link-registro, .link-promociones {
+    color: #ecebeb;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.link-inicioSesion:hover, .link-registro:hover, .link-promociones:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.link-inicioSesion:visited, .link-registro:visited, .link-promociones:visited {
+    color: #ecebeb;
+}
+
+/* ############ MAIN CONTENT */
+
+main {
+    margin: auto;
+    max-width: 77%;
+    border: 1px solid black;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.titulo {
+    margin-bottom: 40px;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+    /* ######### Sección Introducción */
+
+.cont-introduccion {
+    margin-bottom: 70px;
+}
+
+
+.cont-login {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.intro-login {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+        /* ###### Botones */
+
+button {
+    --color: rgb(19, 168, 206);
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.btn-inicio, .btn-registro {
+    text-decoration: none;
+    color: rgb(19, 168, 206);
+    font-weight: 400;
+}
+   
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+div button:hover .btn-inicio, div button:hover .btn-registro {
+    color: #fff;
+}
+   
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+        /* ###### IMG  */
+.intro-img {
+    object-fit: contain;
+}
+
+.intro-img img {
+    width: 100%;
+}
+
+    /* ######### Sección Promociones */
+
+.promociones-intro h2 {
+    margin-bottom: 30px;
+}
+
+.promociones-intro {
+    margin-bottom: 40px;
+}
+
+.cont-cards {
+    display: flex;
+    gap: 20px;
+}
+
+        /* ###### Cards */
+.cont-card {
+    width: 33%;
+}
+
+.img-card {
+    width: 100%;
+    height: 472px;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.card-title h3 {
+    font-weight: 600;
+}
+
+.card-txt p {
+    text-align: justify;
+    height: 100px;
+}
+
+.cont-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.card-btn {
+    border-radius: 10px;
+    background-color: #2ba8fb;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+  
+.card-btn:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+  
+.card-btn:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+   
+
