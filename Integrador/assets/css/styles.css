@@ -9,15 +9,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /* Se aplica solo en html */
+}
+
 /* ############ HEADER */
 
 header {
     display: flex;
-    height: 20vh;
+    height: 15vh;
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: rgb(24, 201, 245);
+    background-color: rgb(45, 156, 247);
 }
 
 .cont-logo {
@@ -37,7 +41,7 @@ img[src$='envios.png'] {
     height: 200px;
 }
 
-    /* Nav */
+    /* ######### Nav */
 
 nav {
     display: flex;
@@ -45,7 +49,7 @@ nav {
     align-items: center;
 }
 
-    /* Título */
+        /* ###### Título */
 
 .link-titulo {
     text-decoration: none;
@@ -58,7 +62,7 @@ nav {
     color: #fff;
 }
 
-    /* Inicio de Sesión y Registro */
+        /* ###### Inicio de Sesión y Registro */
 
 .links-header {
     list-style: none;
@@ -67,27 +71,45 @@ nav {
     margin-left: 15%;
 }
 
-.link-inicioSesion, .link-registro, .link-promociones {
+.link-header {
     color: #ecebeb;
     font-size: 1.1em;
     text-decoration: none;
+    position: relative;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.link-inicioSesion:hover, .link-registro:hover, .link-promociones:hover {
+.link-header:hover {
     color: #fff;
     font-weight: 600;
 }
 
-.link-inicioSesion:visited, .link-registro:visited, .link-promociones:visited {
+.link-header:visited {
     color: #ecebeb;
+}
+
+.link-header::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+}
+
+.link-header:hover::after {
+    transform: scaleX(1);
 }
 
 /* ############ MAIN CONTENT */
 
 main {
     margin: auto;
-    max-width: 77%;
-    border: 1px solid black;
+    max-width: 80%;
 }
 
 h2 {
@@ -109,13 +131,18 @@ h2 {
     /* ######### Sección Introducción */
 
 .cont-introduccion {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 70px;
 }
 
+.titulo {
+    width: 100%;
+}
 
 .cont-login {
     display: flex;
-    gap: 10px;
+    gap: 40px;
     margin-top: 20px;
 }
 
@@ -205,7 +232,7 @@ button:hover:before {
 
 .cont-cards {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
         /* ###### Cards */
@@ -259,6 +286,128 @@ button:hover:before {
     -webkit-transition: all 0.25s;
     box-shadow: none;
     transform: scale(0.98);
+}
+
+/* ############ FOOTER */
+
+footer {
+    display: flex;
+    background-color: rgb(45, 156, 247);
+    color: #fff;
+}
+
+    /* ######### Sitio */
+
+.cont-sitio {
+    border: 1px solid red;
+    margin: 30px 0 0 10px;
+    width: 25%;
+}
+
+.sitio {
+    width: 100%;
+}
+
+.sitio-titulo h3 {
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.sitio-lista ul li:nth-child(odd) {
+    margin-bottom: 5px;
+}
+
+.sitio-lista ul li:nth-child(2) {
+    margin-bottom: 5px;
+}
+
+.sitio-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sitio-link:hover {
+    font-weight: 600;
+    text-shadow: 2px 3px 3px rgba(0,0,0,0.6);
+}
+
+    /* ######### Contactenos  */
+.cont-contactenos {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.contactenos {
+    display: flex;
+    flex-direction: column;
+}
+        /* Titulo Contactenos */
+.footer-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer-titulo h3 {
+    font-size: 1.6em;
+}
+
+        /* Texto Contactenos */
+
+.redes-txt {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+        /* Logos Redes */
+
+.redes-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    color: #fff;
+}
+
+.logo-linkedin {
+    width: 37px;
+}
+
+    /* ######### Ubicación */
+
+.cont-ubicacion {
+    margin-top: 30px;
+    width: 30%;
+}
+
+.ubicacion {
+    width: 100%;
+}
+
+.titulo-ubicacion {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-ubicacion h3 {
+    font-size: 1.6em;
+}
+
+.cont-mapa {
+    text-align: center;
+}
+
+.mapa {
+    border-radius: 10px;
+    width: 80%;
+    height: 30%;
 }
 
    
