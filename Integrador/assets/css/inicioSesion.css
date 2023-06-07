@@ -185,21 +185,21 @@ button {
     font-weight: bold;
   }
   
-  button .arrow-wrapper {
+button .arrow-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  button .arrow {
+button .arrow {
     margin-top: 1px;
     width: var(--arrow-width);
     height: var(--arrow-stroke);
     position: relative;
     transition: 0.2s;
-  }
+}
   
-  button .arrow::before {
+button .arrow::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -211,17 +211,44 @@ button {
     transition: 0.2s;
     padding: 3px;
     transform: rotate(-45deg);
-  }
+}
   
-  button:hover {
+button:hover {
     background-color: #fff;
     color: blue;
-  }
+}
   
-  button:hover .arrow {
-    background: blue;
-  }
+button:hover .arrow {
+    background: blue;}
   
-  button:hover .arrow:before {
+button:hover .arrow:before {
     right: 0;
-  }
+}
+
+/* RESPONSIVE DESIGN */
+
+    /*   992px   */
+
+    @media (max-width: 992px) {
+
+        header {
+            height: 25vh;
+        }
+
+        .link-titulo {
+            margin-left: 50px;
+        }
+    
+        .titulo {
+            margin-bottom: 0;
+        }
+    
+        .cont-logo {
+            display: none;
+        }
+
+        main {
+            width: 50%;
+        }
+    
+    }

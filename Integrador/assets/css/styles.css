@@ -413,5 +413,54 @@ footer {
     height: 30%;
 }
 
-   
+/* RESPONSIVE DESIGN */
+
+    /*   992px   */
+
+@media (max-width: 992px) {
+
+    header {
+        height: 25vh;
+    }
+
+    .titulo {
+        margin-bottom: 0;
+    }
+
+    .cont-logo {
+        display: none;
+    }
+
+    .cont-login {
+        margin-top: 0;
+    }
+
+    .intro-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .cont-cards {
+        flex-direction: column;
+    }
+
+    .cont-card {
+        width: 70%;
+        margin: auto;
+    }
+
+    .img-card {
+        height: 200px;
+    }
+
+    .card-title h3 {
+        font-size: 1.4em;
+    }
+
+    .card-txt p {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}
 

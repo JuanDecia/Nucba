@@ -215,3 +215,31 @@ button:hover:before {
     top: -30px;
     left: -30px;
 }
+
+/* RESPONSIVE DESIGN */
+
+    /*   992px   */
+
+    @media (max-width: 992px) {
+
+        header {
+            height: 25vh;
+        }
+
+        .link-titulo {
+            margin-left: 50px;
+        }
+    
+        .titulo {
+            margin-bottom: 0;
+        }
+    
+        .cont-logo {
+            display: none;
+        }
+
+        main {
+            width: 50%;
+        }
+    
+    }
