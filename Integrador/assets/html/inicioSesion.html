@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio Sesión</title>
 
     <link rel="stylesheet" href="../css/inicioSesion.css" />
@@ -11,38 +11,68 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
-</head>
-<body>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <!-- Logo -->
-        <div class="cont-logo">
-            <img src="../img/logo-envios.png" alt="logo-envios" title="logo" />
+      <!-- Logo -->
+      <div class="cont-logo">
+        <img src="../img/logo-envios.png" alt="logo-envios" title="logo" />
+      </div>
+
+      <!-- Navegación -->
+      <nav>
+        <a class="link-titulo" href="../../index.html">
+          <h1>Envíos.com</h1>
+        </a>
+
+        <ul class="links-header">
+          <!-- Iniciar Sesión -->
+          <li>
+            <a class="active" href="./assets/html/inicioSesion.html"
+              >Iniciar Sesión</a
+            >
+          </li>
+
+          <!-- Registro -->
+          <li>
+            <a class="link-header" href="../html/registro.html"
+              >Registrate</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+        <h1>Iniciar Sesión</h1>
+
+      <form action="">
+
+        <div class="cont-campo">
+          <label for=""></label>
+          <input type="text" placeholder="Usuario o Email" />
         </div>
 
-        <!-- Navegación -->
-        <nav>
-            <a class="link-titulo" href="../../index.html">
-                <h1>Envíos.com</h1>
-            </a>
-                
-            <ul class="links-header">
-                <!-- Iniciar Sesión -->
-                <li>
-                    <a class="active" href="./assets/html/inicioSesion.html">Iniciar Sesión</a>
-                </li>
+        <div class="cont-campo">
+          <label for=""></label>
+          <input type="text" placeholder="Contraseña" />
+        </div>
 
-                <!-- Registro -->
-                <li>
-                    <a class="link-header" href="./assets/html/registro.html">Registrate</a>
-                </li>
-
-                <li>
-                    <a class="link-header" href="#promociones">Promociones</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-</body>
+        <div class="cont-button">
+            <button>
+                Inicia Sesión
+                <div class="arrow-wrapper">
+                    <div class="arrow"></div>
+                </div>
+            </button>
+        </div>
+        
+      </form>
+    </main>
+  </body>
 </html>

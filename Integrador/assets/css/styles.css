@@ -162,7 +162,7 @@ h2 {
         /* ###### Botones */
 
 button {
-    --color: rgb(19, 168, 206);
+    --color: rgb(45, 156, 247);
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -233,11 +233,15 @@ button:hover:before {
 .cont-cards {
     display: flex;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
         /* ###### Cards */
 .cont-card {
     width: 33%;
+    box-shadow: 0px -1px 12px 6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -1px 12px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 12px 6px rgba(0,0,0,0.75);
 }
 
 .img-card {
@@ -258,6 +262,7 @@ button:hover:before {
 .card-txt p {
     text-align: justify;
     height: 100px;
+    margin: 0 15px;
 }
 
 .cont-btn {
@@ -299,7 +304,6 @@ footer {
     /* ######### Sitio */
 
 .cont-sitio {
-    border: 1px solid red;
     margin: 30px 0 0 10px;
     width: 25%;
 }
@@ -379,7 +383,6 @@ footer {
 .logo-linkedin {
     width: 37px;
 }
-
     /* ######### Ubicación */
 
 .cont-ubicacion {
