@@ -115,6 +115,18 @@ nav {
     transform: scaleX(1);
 }
 
+    /* Ocultamos icono y checkbox en pantalla grande */
+
+.img-menu {
+    width: 53px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 /* FORMULARIO */
 
 main {
@@ -220,26 +232,136 @@ button:hover:before {
 
     /*   992px   */
 
-    @media (max-width: 992px) {
+@media (max-width: 992px) {
 
-        header {
-            height: 25vh;
-        }
-
-        .link-titulo {
-            margin-left: 50px;
-        }
-    
-        .titulo {
-            margin-bottom: 0;
-        }
-    
-        .cont-logo {
-            display: none;
-        }
-
-        main {
-            width: 50%;
-        }
-    
+    header {
+        height: 25vh;
     }
+
+    .link-titulo {
+        margin-left: 50px;
+    }
+
+    .titulo {
+        margin-bottom: 0;
+    }
+
+    .cont-logo {
+        display: none;
+    }
+
+    main {
+        width: 50%;
+    }
+
+}
+
+    /*   768px   */
+
+@media (max-width: 778px) {
+
+    header {
+        height: 12vh;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .links-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #2ba8fb;
+        position: absolute;
+        top: 39px;
+        right: 80px;
+        padding: 20px;
+        transition: opacity 0.5s ease, height 0.5s ease;
+        opacity: 0; /* Ocultamos menu */
+    }
+
+    li {
+        text-align: center;
+    }
+
+    label {
+        display: flex;
+        justify-content: end;
+    }
+
+    .img-menu {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    #menu-toggle:checked + .links-header {
+        opacity: 1;
+    }
+
+    .titulo {
+        margin-bottom: 20px;
+        color: rgb(45, 156, 247);
+        text-shadow: 2px 4px 7px rgba(0,0,0,0.6);    
+    }
+
+    .cont-login {
+        margin-top: 20px;
+        justify-content: center;
+        background-image: url('../img/correo.jpg');
+        border-radius: 10px;
+    }
+
+    .login-txt {
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+
+    .txt {
+        margin-top: 0;
+        padding: 20px;
+        font-weight: 500;
+    }
+
+    .intro-img {
+        display: none;
+    }
+
+    .promociones-intro h2 {
+        color: rgb(45, 156, 247);
+        text-shadow: 2px 4px 7px rgba(0,0,0,0.6);
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .cont-sitio {
+        margin: 0;
+        width: 50%;
+    }
+
+    .sitio-link {
+        padding: 50px;
+    }
+
+    .cont-contactenos {
+        width: 50%;
+        margin: 0;
+    }
+
+    .cont-ubicacion {
+        width: 100%;
+    }
+}
+
+    /*   576px   */
+
+main {
+    width: 85%;
+}
