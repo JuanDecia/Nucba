@@ -125,14 +125,35 @@ main {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3.4em;
     text-align: center;
     margin-top: 30px;
     font-weight: 400;
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 .titulo {
     margin-bottom: 40px;
+    color: rgb(45, 156, 247);
+    text-shadow: 2px 4px 7px rgba(0,0,0,0.6);
+    animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
 }
 
 .txt {
@@ -177,7 +198,7 @@ button {
     --color: rgb(45, 156, 247);
     font-family: inherit;
     display: inline-block;
-    width: 8em;
+    width: 30%;
     height: 2.6em;
     line-height: 2.5em;
     margin: 20px;
@@ -229,13 +250,15 @@ button:hover:before {
 }
 
 .intro-img img {
-    width: 100%;
+    width: 90%;
 }
 
     /* ######### Sección Promociones */
 
 .promociones-intro h2 {
     margin-bottom: 30px;
+    color: rgb(45, 156, 247);
+    text-shadow: 2px 4px 7px rgba(0,0,0,0.6);
 }
 
 .promociones-intro {
@@ -583,41 +606,44 @@ footer {
 
     /*   576px   */
 
-.login-btn {
-    flex-direction: column;
-    width: 100%;
+@media (max-width: 576px){
+    
+    .login-btn {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .login-btn button {
+        width: 75%;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+    
+    .cont-sitio {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    .footer-titulo h3 {
+        font-size: 2.5em;
+    }
+    
+    .sitio-lista ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .sitio-link {
+        font-size: 1.3em;
+    }
+    
+    .cont-contactenos {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
-.login-btn button {
-    width: 75%;
-}
-
-footer {
-    flex-direction: column;
-}
-
-.cont-sitio {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.footer-titulo h3 {
-    font-size: 2.5em;
-}
-
-.sitio-lista ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.sitio-link {
-    font-size: 1.3em;
-}
-
-.cont-contactenos {
-    border: 1px solid black;
-    width: 100%;
-    margin-top: 20px;
-}
 
