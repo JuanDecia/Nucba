@@ -516,16 +516,15 @@ footer {
     }
 
     .links-header {
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #2ba8fb;
+        background-color: rgba(29, 178, 247, 0.877);
         position: absolute;
-        top: 39px;
-        right: 80px;
+        top: 27px;
+        right: 100px;
         padding: 20px;
-        transition: opacity 0.5s ease, height 0.5s ease;
-        opacity: 0; /* Ocultamos menu */
+        border-radius: 10px;
+        display: none; /* Ocultamos menu */
     }
 
     li {
@@ -542,8 +541,27 @@ footer {
         margin-right: 20px;
     }
 
-    #menu-toggle:checked + .links-header {
+    @keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+    #menu-toggle:checked + .links-header {
+        display: flex;
+        animation: fade 0.7s ease-in, slide-left 0.7s ease-in-out;
     }
 
     .titulo {
