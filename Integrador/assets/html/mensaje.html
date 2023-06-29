@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejanos tu Mensaje</title>
+
+    <link rel="stylesheet" href="../css/mensaje.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+
+        <!-- Logo -->
+        <div class="cont-logo">
+            <img src="../img/logo-envios.png" alt="logo-envios" title="logo" />
+        </div>
+
+        <!-- Navegación -->
+        <nav>
+
+            <!-- Titulo Nav -->
+            <a class="link-titulo" href="../../index.html">
+                <h1>Envios.com</h1>
+            </a>
+
+            <!-- Menú Desplegable para Responsive -->
+            <label for="menu-toggle">
+                <img class="img-menu" src="./assets/img/menu.svg" alt="menu" />
+            </label>
+            <input id="menu-toggle" name="menu-toggle" type="checkbox">
+                
+            <!-- Lista -->
+            <ul class="links-header">
+
+                <li>
+                    <a class="link-header" href="./inicioSesion.html">Iniciar Sesión</a>
+                </li>
+               
+                <li>
+                    <a class="link-header" href="./registro.html">Registrate</a>
+                </li>
+
+                <li class="promociones">
+                    <a class="link-header" href="../../index.html">Promociones</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-formContacto">
+            <article class="cont-formContacto">
+                <div class="cont-titulo">
+                    <h2>Dejanos tu mensaje y ayudanos a mejorar juntos.</h2>
+                </div>
+
+                <div>
+                    <form action="">
+                        <label for="name"></label>
+                        <input id="name" type="text" placeholder="Quisieramos saber tu nombre" />
+
+                        <label for="email"></label>
+                        <input id="email" type="text" placeholder="Mail" />
+
+                        <textarea name="" id="" cols="10" rows="10" placeholder="Dejanos tu mensaje aquí. ."></textarea>
+                    </form>
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion-img">
+            <article>
+                <div class="cont-img">
+                    <img class="imagen" src="../img/Contacto.jpg" alt="contacto" title="img-contacto">
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
